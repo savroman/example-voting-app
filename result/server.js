@@ -25,7 +25,7 @@ io.sockets.on('connection', function (socket) {
 
 var db_host = process.env.DB_HOST || 'db';
 var db_user = process.env.DB_USER || 'postgres';
-var db_pswd = process.env.DB_PASS || 'postgres';
+var db_pswd = process.env.DB_PSWD || 'postgres';
 var db_name = process.env.DB_NAME || 'postgres';
 
 var pool = new pg.Pool({
