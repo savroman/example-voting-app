@@ -35,6 +35,9 @@ services:
         condition: service_healthy 
     environment:
       DB_HOST: "db"
+      DB_USER: "postgres"
+      DB_PSWD: "postgres"
+      DB_NAME: "postgres"
     volumes:
       - ./result:/app
     ports:
@@ -55,6 +58,9 @@ services:
     environment:
       REDIS_HOST: "redis"
       DB_HOST: "db"
+      DB_USER: "postgres"
+      DB_PSWD: "postgres"
+      DB_NAME: "postgres"
     networks:
       - back-tier
 
